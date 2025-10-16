@@ -1,0 +1,81 @@
+/* General reset and base styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+  color: #333333;
+  margin: 0;
+  font: 1.2em / 1.6 sans-serif;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border: 1px solid black;
+}
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #000000;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin: 0;
+  list-style: none;
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+}
+
+nav a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Main layout grid */
+main.grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 1rem;
+}
+
+/* Feature image with text wrapping */
+.feature {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  max-width: 40%;
+  height: auto;
+}
+
+/* Photography section grid */
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  padding: 0;
+  list-style: none;
+}
+
+.photos li img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
