@@ -105,3 +105,10 @@ nav a:focus {
   background-color: #aa6666;
   text-decoration: none;
 }
+a[href^="http"]{
+  background-size: 14px 14px;
+  background-image: url("./external-link-52.png");
+  background-repeat: no-repeat;
+  background-position: right center; /* Positions the image to the right, vertically centered */
+  padding-right: 16px; /* Adjust this value based on your image width */
+}
