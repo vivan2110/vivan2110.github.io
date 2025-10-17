@@ -20,14 +20,12 @@ img {
   max-width: 980px;
 }
 
-/* Navigation bar styling */
 nav {
   background-color: #000000;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-between;
   padding: 0 1rem;
   margin: 0;
   list-style: none;
@@ -49,10 +47,10 @@ nav a:hover {
   background-color: #555;
 }
 
-/* Main layout grid */
 main.grid {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  /*The above line sets up a two-column layout with a 3:1 ratio*/
   gap: 20px;
   padding: 1rem;
 }
@@ -61,6 +59,7 @@ main.grid {
 .feature {
   float: left;
   margin: 0 1rem 1rem 0;
+  /*The above line sets margin for two sides: right and bottom*/
   max-width: 40%;
   height: auto;
 }
@@ -69,13 +68,9 @@ main.grid {
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /*The above line sets up a two-column layout with equal width*/
   gap: 5px;
   padding: 0;
   list-style: none;
 }
 
-.photos li img {
-  width: 100%;
-  height: auto;
-  display: block;
-}

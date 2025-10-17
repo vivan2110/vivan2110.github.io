@@ -11,7 +11,7 @@ body {
   max-width: 1400px;
   font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   color: #333;
 }
@@ -58,9 +58,8 @@ h2 {
   margin-top: 2rem;
   margin-bottom: 0;
 }
-a[href^="http"]::after {
-  content: "🌐"; 
-  margin-left: 4px;
+img{
+  width:11px
 }
 
 section h2 + p {
@@ -69,8 +68,6 @@ section h2 + p {
 
 a {
   color: #aa6666;
-  text-decoration: underline;
-  outline: none;
 }
 
 a:visited {
@@ -91,17 +88,13 @@ nav ul {
 
 nav a {
   display: block;
-  width: 100%;
   padding: 1rem;
-  background-color: white;
   border: 2px solid #aa6666;
   color: #aa6666;
   text-align: center;
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
   text-decoration: none;
-  outline: none;
   margin-bottom: 1rem;
 }
 
@@ -109,5 +102,4 @@ nav a:hover,
 nav a:focus {
   background-color: #aa6666;
   text-decoration: none;
-  outline: none;
 }
