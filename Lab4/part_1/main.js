@@ -36,6 +36,7 @@ const events = [
     "melted into a puddle on the sidewalk",
     "turned into a slug and slithered away"
 ];
+// Above we have define 3 const arrays: characters, places, and events for characters, place and events.
 // spontaneously combusted
 // melted into a puddle on the sidewalk
 // turned into a slug and slithered away
