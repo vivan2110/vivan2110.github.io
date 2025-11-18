@@ -58,17 +58,22 @@ function returnRandomStoryString() {
 
 generateBtn.addEventListener("click", generateStory);
 
+let storyText = returnRandomStoryString();
 function generateStory() {
   if (customName.value !== "") {
     const name = customName.value;
+    newStory = newStory.replace("Bob", name);
   }
 
+  // Convert to UK units
   if (document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature = Math.round(94);
+    const weight = Math.round(300 * 0.0714286) + " stone";
+    const temperature = Math.round((94 - 32) * 5 / 9) + " Celsius";
+
+    newStory = newStory.replace("300 pounds", weight);
+    newStory = newStory.replace("94 Fahrenheit", temperature);
   }
 
-  // TODO: replace "" with the correct expression
-  story.textContent = "";
+  story.textContent = newStory;
   story.style.visibility = "visible";
 }
