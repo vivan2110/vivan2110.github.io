@@ -43,7 +43,7 @@ const events = [
 // Partial return random string function
 
 function returnRandomStoryString() {
-
+    // IN ths function, complete the logic to select random items from the arrays and return the story text and we use randomValueFromArray function
     const randomCharacter = randomValueFromArray(characters);
     const randomPlace = randomValueFromArray(places);
     const randomEvent = randomValueFromArray(events);
@@ -58,6 +58,7 @@ function returnRandomStoryString() {
 
 generateBtn.addEventListener("click", generateStory);
 
+// In below function, complete the logic to replace name and convert units and display story
 function generateStory() {
     let newStory = returnRandomStoryString();
     if (customName.value !== "") {
