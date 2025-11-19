@@ -1,5 +1,5 @@
 /*
-Name: Your Name
+Name: Vivan Patel
 File: main.js
 Date: 18 November 2025
 Description: JavaScript logic for Image Gallery
