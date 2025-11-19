@@ -2,7 +2,7 @@
 Name: Vivan Patel
 File: main.js
 Date: 18 November 2025
-Description: Part 4 – Bouncing Balls (Object Building Practice)
+Description: Part 3 – Bouncing Balls (Object Building Practice)
 */
 
 const canvas = document.querySelector("canvas");
