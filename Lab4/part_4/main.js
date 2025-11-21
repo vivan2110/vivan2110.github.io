@@ -2,7 +2,7 @@
 Name: Vivan Patel
 File: main.js
 Date: 18 November 2025
-Description: Part 3 – Bouncing Balls (Object Building Practice)
+Description: Part 4 – Bouncing Balls (Object Building Practice)
 */
 // main.js
 
@@ -83,7 +83,7 @@ class EvilCircle extends Shape {
 
     // This was provided in the instructions
     window.addEventListener("keydown", (e) => {
-      switch(e.key) {
+      switch (e.key) {
         case "a":
           this.x -= this.velX;
           break;
@@ -109,12 +109,15 @@ class EvilCircle extends Shape {
   }
 
   checkBounds() {
-        if (this.x + this.size >= width || this.x - this.size <= 0) this.velX = -this.velX;
-        if (this.y + this.size >= height || this.y - this.size <= 0) this.velY = -this.velY;
+    if (this.x + this.size >= width) this.x = width - this.size;
+    if (this.x - this.size <= 0) this.x = this.size;
+    // I update this line so that the EvilCircle stays within bounds x axis as well
 
-        this.x += this.velX;
-        this.y += this.velY;
-    }
+    if (this.y + this.size >= height) this.y = height - this.size;
+    if (this.y - this.size <= 0) this.y = this.size;
+    // I added this line so that the EvilCircle stays within bounds y axis as well
+  }
+
 
   collisionDetect() {
     for (const ball of balls) {
