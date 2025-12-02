@@ -131,9 +131,26 @@ nav .search {
   font-size: 1.6rem;
   height: 32px;
 }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  overflow: hidden;
+}
+
 
 .search input[type="search"] {
   flex: 3;
+}
+h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+h3 {
+  font-size: 3rem;
+}
+.text {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .search input[type="submit"] {
